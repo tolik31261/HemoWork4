@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -100,5 +101,23 @@ public class Main {
             System.out.println("Мест в вагоне нет.");
         }
 
+    }
+
+    public static void task7() {
+        System.out.println("Задача 7");
+        int one = 0;
+        int two = 0;
+        int three = 0;
+        if (one > three && one > two) {
+            System.out.println("Большее число " + one);
+        } else if (three > one && three > two) {
+            System.out.println("Большее число " + three);
+        } else if (two > one && two > three) {
+            System.out.println("Большее число " + two);
+        } else if (one == three || one == two) {
+            System.out.println("Большее число " + one);
+        } else if (two == three || two == one) {
+            System.out.println("Большее число" + two);
+        }
     }
 }
